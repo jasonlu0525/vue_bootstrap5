@@ -1,19 +1,52 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    name: 'layout',
+    component: () => import('@/views/customer/Layout.vue'),
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: () => import('@/views/customer/Home.vue'),
+      },
+      {
+        path: 'product',
+        name: 'product',
+        component: () => import('@/views/customer/Product.vue'),
+      },
+      {
+        path: 'cart',
+        name: 'cart',
+        component: () => import('@/views/customer/Cart.vue'),
+      },
+      {
+        path: 'login',
+        name: 'login',
+        component: () => import('@/views/customer/Login.vue'),
+      },
+      {
+        path: 'checkout',
+        name: 'checkout',
+        component: () => import('@/views/customer/Checkout.vue'),
+      },
+      {
+        path: 'pay',
+        name: 'pay',
+        component: () => import('@/views/customer/Payment.vue'),
+      },
+      {
+        path: 'confirm',
+        name: 'confirm',
+        component: () => import('@/views/customer/Confirm.vue'),
+      },
+      {
+        path: 'success',
+        name: 'success',
+        component: () => import('@/views/customer/Success.vue'),
+      },
+    ],
   },
 ];
 
