@@ -511,12 +511,22 @@ $utilities: map-merge(
     'padding-start': (
       responsive: true,
       property: padding-left,
-      class: ps,
+      class: ps,g
       values: $spacers,
     ),
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
+    "writing-mode":
+    (
+      responsive: true,
+      property: writing-mode,
+      class: writing-mode,
+      values: (
+       horizontal: horizontal-tb ,
+       vertical--rl:vertical-rl
+      ),
+    ),
     'font-family':
       (
         property: font-family,
@@ -526,7 +536,8 @@ $utilities: map-merge(
         ),
       ),
     'font-size': (
-      rfs: true,
+      rfs: false,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes,
