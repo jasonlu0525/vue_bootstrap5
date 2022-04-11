@@ -6,6 +6,15 @@ $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(
   (
+    // 自定義 
+    'aspect-ratios':
+    (
+      responsive:true,
+      property: --bs-aspect-ratio,
+      class: aspect-ratios,
+      values:$aspect-ratios
+    ),
+
     // scss-docs-start utils-vertical-align
     'align':
       (
@@ -104,6 +113,16 @@ $utilities: map-merge(
         x: translateX(-50%),
         y: translateY(-50%),
         0: translate(0%),
+      ),
+    ),
+    'z-index': (
+      responsive: true,
+      property: z-index,
+      class: z-index,
+      values: (
+        top: 9999,
+        center: 1,
+        bottom: 0,
       ),
     ),
     // scss-docs-end utils-position
@@ -511,30 +530,29 @@ $utilities: map-merge(
     'padding-start': (
       responsive: true,
       property: padding-left,
-      class: ps,g
-      values: $spacers,
+      class: ps,
+      g values: $spacers,
     ),
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
-    "writing-mode":
-    (
-      responsive: true,
-      property: writing-mode,
-      class: writing-mode,
-      values: (
-       horizontal: horizontal-tb ,
-       vertical--rl:vertical-rl
-      ),
-    ),
-    'font-family':
+    'writing-mode':
       (
-        property: font-family,
-        class: font,
+        responsive: true,
+        property: writing-mode,
+        class: writing-mode,
         values: (
-          monospace: var(--#{$variable-prefix}font-monospace),
+          horizontal: horizontal-tb,
+          vertical--rl: vertical-rl,
         ),
       ),
+    'font-family': (
+      property: font-family,
+      class: font,
+      values: (
+        monospace: var(--#{$variable-prefix}font-monospace),
+      ),
+    ),
     'font-size': (
       rfs: false,
       responsive: true,

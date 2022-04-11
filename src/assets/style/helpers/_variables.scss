@@ -71,7 +71,8 @@ $colors: (
 // accent  #FFE180
 // scss-docs-start theme-color-variables
 $primary: #3f5d45 !default; //$blue !default;
-$secondary: #8da291 !default;
+$secondary-100: #EAF0ED !default;
+$secondary-200: #8DA291 !default;
 //$gray-600 !default;
 $accent: #ffe180 !default;
 // eslint-disabled
@@ -86,7 +87,8 @@ $dark: $gray-900 !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   'primary': $primary,
-  'secondary': $secondary,
+  'secondary-100': $secondary-100,
+  'secondary-200': $secondary-200,
   'accent': $accent,
   'success': $success,
   'info': $info,
@@ -380,50 +382,59 @@ $gradient: linear-gradient(180deg, rgba($white, 0.15), rgba($white, 0)) !default
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+
 $spacers: (
-  0: 0,
-  1: $spacer * 0.25,
-  //4
-  2: $spacer * 0.5,
-  //8
-  3: $spacer * 0.75,
-  //12
-  4: $spacer,
-  //16
-  5: $spacer * 1.25,
-  // 20
-  6: $spacer * 1.5,
-  //24
-  7: $spacer * 1.75,
-  //28
-  8: $spacer * 2,
-  //32
-  9: $spacer * 2.25,
-  //36
-  10: $spacer * 2.5,
-  //40
-  11: $spacer * 2.75,
-  //44
-  12: $spacer * 3,
-  //48
-  13: $spacer * 3.25,
-  //52
-  14: $spacer * 3.5,
-  //56
-  15: $spacer * 3.75,
-  //60
-  16: $spacer * 4,
-  //64
-  17: $spacer * 4.25,
-  //68
-  18: $spacer * 4.5,
-  //72
-  19: $spacer * 4.75,
-  //76
-  20: $spacer * 5,
-  22: $spacer * 5.5,
-  30: $spacer * 7.5,
-  //80
+  0:  0,
+  1:  $spacer * 0.125,        //2
+  2:  $spacer * 0.25,         //4
+  3:  $spacer * 0.375,        //6
+  4:  $spacer * 0.5,          //8
+  5:  $spacer * 0.625,        //10
+  6:  $spacer * 0.75,         //12
+  7:  $spacer * 0.875,        //14
+  8:  $spacer ,               //16
+  9:  $spacer * 1.125,        //18
+  10: $spacer * 1.25 ,        //20
+  11: $spacer * 1.375 ,       //22
+  12: $spacer * 1.5 ,         //24
+  13: $spacer * 1.625,        //26
+  14: $spacer * 1.75,         //28
+  15: $spacer * 1.875,        //30
+  16: $spacer * 2,            //32
+  17: $spacer * 2.125,        //34
+  18: $spacer * 2.25,         //36
+  19: $spacer * 2.375,        //38
+  20: $spacer * 2.5,          //40
+  21: $spacer * 2.625,        //42
+  22: $spacer * 2.75,         //44
+  23: $spacer * 2.875,        //46
+  24: $spacer * 3,            //48
+  25: $spacer * 3.125,        //50
+  26: $spacer * 3.25,         //52
+  27: $spacer * 3.375,        //54
+  28: $spacer * 3.5,          //56
+  29: $spacer * 3.625,        //58
+  30: $spacer * 3.75,         //60
+  31: $spacer * 3.875,        //62
+  32: $spacer * 4,            //64
+  33: $spacer * 4.125,        //66
+  34: $spacer * 4.25,         //68
+  35: $spacer * 4.375,        //70
+  36: $spacer * 4.5 ,         //72
+  37: $spacer * 4.625,        //74
+  38: $spacer * 4.75,         //76
+  39: $spacer * 4.875 ,       //78
+  40: $spacer * 5,            //80
+  41: $spacer * 5.125,        //82
+  42: $spacer * 5.25,         //84
+  43: $spacer * 5.375,        //86
+  44: $spacer * 5.5,          //88
+  45: $spacer * 5.625,        //90
+  46: $spacer * 5.75,         //92
+  47: $spacer * 5.875,        //94
+  48: $spacer * 6,            //96
+  49: $spacer * 6.125,        //98
+  50: $spacer * 6.25,         //100
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -531,7 +542,7 @@ $container-max-widths: (
   // lg: 960px,
   lg: 964px,
   // xl: 1140px,
-  // xxl: 1320px,
+  // xxl: 1320px,,,
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -602,6 +613,7 @@ $transition-collapse-width: width 0.35s ease !default;
 // scss-docs-start aspect-ratios
 $aspect-ratios: (
   '1x1': 100%,
+  '2x1': 50%,
   '4x3': calc(3 / 4 * 100%),
   '16x9': calc(9 / 16 * 100%),
   '21x9': calc(9 / 21 * 100%),
@@ -768,7 +780,8 @@ $table-bg-scale: -80% !default;
 // scss-docs-start table-loop
 $table-variants: (
   'primary': shift-color($primary, $table-bg-scale),
-  'secondary': shift-color($secondary, $table-bg-scale),
+  'secondary-100': shift-color($secondary-100, $table-bg-scale),
+  'secondary-200': shift-color($secondary-200, $table-bg-scale),
   'success': shift-color($success, $table-bg-scale),
   'info': shift-color($info, $table-bg-scale),
   'warning': shift-color($warning, $table-bg-scale),
