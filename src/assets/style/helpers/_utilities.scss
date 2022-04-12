@@ -6,7 +6,7 @@ $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(
   (
-    // 自定義 
+    // 自定義
     'aspect-ratios':
     (
       responsive:true,
@@ -120,7 +120,7 @@ $utilities: map-merge(
       property: z-index,
       class: z-index,
       values: (
-        top: 9999,
+        top: 999,
         center: 1,
         bottom: 0,
       ),
@@ -577,6 +577,7 @@ $utilities: map-merge(
       ),
     ),
     'line-height': (
+      responsive: true,
       property: line-height,
       class: lh,
       values: (

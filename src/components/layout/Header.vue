@@ -1,6 +1,14 @@
 <template>
-  <header class="navbar navbar-expand-md navbar-light bg-white py-14 positon-sticky sticky-top">
-    <div class="container position-relative" >
+  <header
+    class="
+      navbar navbar-expand-md navbar-light
+      bg-white
+      py-14
+      positon-sticky
+      sticky-top
+    "
+  >
+    <div class="container position-relative">
       <h1
         class="
           position-absolute position-md-static
@@ -46,16 +54,17 @@
         "
         id="navbarSupportedContent"
       >
-        <ul class="navbar-nav ms-auto  mb-0 fw-bold">
+        <ul class="navbar-nav ms-auto mb-0 fw-bold">
           <li class="nav-item px-md-12">
-            <router-link to="/" class="nav-link text-primary
-            px-6" aria-current="page">首頁</router-link>
+            <router-link to="/" class="nav-link text-primary px-6" aria-current="page"
+              >首頁</router-link
+            >
           </li>
           <li class="nav-item px-md-6">
             <router-link to="/product" class="nav-link text-primary px-6">甜點</router-link>
           </li>
           <li class="nav-item px-md-6">
-            <router-link to="/login" class="nav-link text-primary  px-6">登入</router-link>
+            <router-link to="/login" class="nav-link text-primary px-6">登入</router-link>
           </li>
         </ul>
       </div>
@@ -70,10 +79,9 @@
   width: 150px;
   height: 18px;
 }
-.banner{
+.banner {
   background-image: url('https://bit.ly/2OhbMHr');
   height: 277px;
-
 }
 
 @media (min-width: 992px) {
@@ -81,7 +89,7 @@
     width: 220px;
     height: 40px;
   }
-  .banner{
+  .banner {
     height: 496px;
   }
 }
