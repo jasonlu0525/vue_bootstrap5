@@ -177,6 +177,7 @@ $utilities: map-merge(
         ),
     ),
     'border-width': (
+      responsive: true,
       property: border-width,
       class: border,
       values: $border-widths,
@@ -531,7 +532,7 @@ $utilities: map-merge(
       responsive: true,
       property: padding-left,
       class: ps,
-      g values: $spacers,
+      values: $spacers,
     ),
     // scss-docs-end utils-spacing
     // Text
