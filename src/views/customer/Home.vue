@@ -88,20 +88,15 @@
     <div class="container gx-0 gx-md-5">
       <div class="row gx-0 gx-md-10 align-items-center">
         <div class="col-md-6 position-md-relative my-md-n10">
-          <div
-            class="
-              ratio
-              aspect-ratios-2x1 aspect-ratios-md-1x1
-              introduction-image
-            "
-          >
+          <div class="ratio aspect-ratios-2x1 aspect-ratios-md-1x1 introduction-image">
             <img src="https://bit.ly/2xPn7Eq" height="460" alt="" />
           </div>
         </div>
         <div class="col-md-6">
-          <div class="d-flex  p-15 p-md-0">
-            <div class="writing-mode-md-vertical--rl col me-md-40 text-secondary-200
-            lh-lg ms-md-17">
+          <div class="d-flex p-15 p-md-0">
+            <div
+              class="writing-mode-md-vertical--rl col me-md-40 text-secondary-200 lh-lg ms-md-17"
+            >
               <p class="mb-15 mb-md-0">
                 青山依舊在，幾度夕陽紅。慣看秋月春風。<br class="d-none d-md-block" />
                 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br class="d-none d-md-block" />
@@ -109,7 +104,7 @@
                   class="d-none d-md-block"
                 />上，古今多少事，都付笑談中。
               </p>
-              <p class=" me-md-32 border-start border-secondary-100">
+              <p class="me-md-32 border-start border-secondary-100">
                 是非成敗轉頭空，青山依舊在，幾度夕陽<br
                   class="d-none d-md-block"
                 />紅。白髮漁樵江渚上，古今多少事，都付笑談中。
@@ -147,6 +142,9 @@ const backgroundImages = [
   background-position: center;
   background-repeat: no-repeat;
   height: 277px;
+  @include media-breakpoint-up(lg) {
+    height: 496px;
+  }
 }
 
 .background-layer {
