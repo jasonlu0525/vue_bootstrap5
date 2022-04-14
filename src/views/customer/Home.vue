@@ -143,6 +143,70 @@
       </div>
     </div>
   </section>
+  <section class="mb-15 mb-md-47 border-bottom">
+    <h2 class="d-md-none text-center mb-15">
+      <img
+        src="@/assets/image/mobile/sm-橫式-為什麼一定要吃甜點.svg"
+        width="192"
+        height="60"
+        alt="為什麼選擇了做甜點"
+      />
+    </h2>
+    <div class="bg-secondary-100">
+      <div class="container gx-0 gx-md-5">
+        <div class="row justify-content-center align-items-center gx-0 gx-md-10
+        flex-lg-row-reverse">
+          <div class="col-sm-10 col-md-6 position-md-relative my-md-n10 pt-sm-15 pt-md-0
+          flex-lg-row-reverse">
+            <div
+              class="
+                ratio
+                aspect-ratios-2x1 aspect-ratios-md-1x1
+                introduction-image
+                w-md-100 w-lg-auto
+              "
+            >
+              <img src="https://bit.ly/2zzAQS4" height="460" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-6">
+            <div class="d-flex p-15 px-sm-0 py-md-0">
+              <div
+                class="
+                  writing-mode-md-vertical--rl
+                  col
+                  me-md-10 me-lg-40
+                  text-secondary-200
+                  lh-lg
+                "
+              >
+                <p class="mb-15 mb-md-0">
+                  青山依舊在，幾度夕陽紅。慣看秋月春風。<br class="d-none d-md-block" />
+                  一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br class="d-none d-md-block" />
+                  轉頭空，滾滾長江東逝水，白髮漁樵江渚<br
+                    class="d-none d-md-block"
+                  />上，古今多少事，都付笑談中。
+                </p>
+                <p class="me-md-16 me-lg-32">
+                  是非成敗轉頭空，青山依舊在，幾度夕陽<br
+                    class="d-none d-md-block"
+                  />紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+              </div>
+              <h2 class="d-none d-md-block col mb-0 mt-md-n27 me-lg-21">
+                <img
+                  class=""
+                  src="@/assets/image/desktop/lg-為什麼一定要吃甜點.svg"
+                  alt="為什麼選擇了做甜點"
+                  height="307"
+                />
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
