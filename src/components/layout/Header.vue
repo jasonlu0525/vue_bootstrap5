@@ -25,7 +25,7 @@
               media="(min-width:992px)"
               srcset="@/assets/image/desktop/logo/logo-all-dark.svg"
             />
-            <img src="@/assets/image/mobile/logotype-sm-dark.svg " class="logo" alt="logo" />
+            <img src="@/assets/image/mobile/logotype-sm-dark.svg" class="logo" alt="logo" />
           </picture>
         </a>
       </h1>
@@ -76,7 +76,7 @@
 <style scoped>
 .logo {
   display: block;
-  width: 150px;
+  width: 114px;
   height: 18px;
 }
 .banner {
@@ -86,7 +86,7 @@
 
 @media (min-width: 992px) {
   .logo {
-    width: 220px;
+    width: 219px;
     height: 40px;
   }
   .banner {

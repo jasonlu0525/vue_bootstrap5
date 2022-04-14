@@ -3,7 +3,7 @@
     <div class="banner"></div>
   </div>
 
-  <section class="container gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
+  <div class="container gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
     <div class="row justify-content-center gx-0">
       <div class="col-md-10 gx-0">
         <ul class="row gx-0 fs-5 fs-md-4">
@@ -79,52 +79,70 @@
         </ul>
       </div>
     </div>
-  </section>
-  <!-- <div class="my-md-n10"> -->
-  <h2 class="d-md-none text-center mb-15">
-    <img src="@/assets/image/mobile/sm-橫式-為什麼選擇了做甜點.svg" height="60" alt="" />
-  </h2>
-  <div class="bg-secondary-100 mb-52">
-    <div class="container gx-0 gx-md-5">
-      <div class="row gx-0 gx-md-10 align-items-center">
-        <div class="col-md-6 position-md-relative my-md-n10">
-          <div class="ratio aspect-ratios-2x1 aspect-ratios-md-1x1 introduction-image">
-            <img src="https://bit.ly/2xPn7Eq" height="460" alt="" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="d-flex p-15 p-md-0">
+  </div>
+  <section class="mb-15 mb-md-52 border-bottom">
+    <h2 class="d-md-none text-center mb-15">
+      <img
+        src="@/assets/image/mobile/sm-橫式-為什麼選擇了做甜點.svg"
+        width="192"
+        height="60"
+        alt="為什麼選擇了做甜點"
+      />
+    </h2>
+    <div class="bg-secondary-100">
+      <div class="container gx-0 gx-md-5">
+        <div class="row justify-content-center align-items-center gx-0 gx-md-10">
+          <div class="col-sm-10 col-md-6 position-md-relative my-md-n10 pt-sm-15 pt-md-0">
             <div
-              class="writing-mode-md-vertical--rl col me-md-40 text-secondary-200 lh-lg ms-md-17"
+              class="
+                ratio
+                aspect-ratios-2x1 aspect-ratios-md-1x1
+                introduction-image
+                w-md-100 w-lg-auto
+              "
             >
-              <p class="mb-15 mb-md-0">
-                青山依舊在，幾度夕陽紅。慣看秋月春風。<br class="d-none d-md-block" />
-                一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br class="d-none d-md-block" />
-                轉頭空，滾滾長江東逝水，白髮漁樵江渚<br
-                  class="d-none d-md-block"
-                />上，古今多少事，都付笑談中。
-              </p>
-              <p class="me-md-32 border-start border-secondary-100">
-                是非成敗轉頭空，青山依舊在，幾度夕陽<br
-                  class="d-none d-md-block"
-                />紅。白髮漁樵江渚上，古今多少事，都付笑談中。
-              </p>
+              <img src="https://bit.ly/2xPn7Eq" height="460" alt="" />
             </div>
-            <h2 class="d-none d-lg-block col mb-0">
-              <img
-                class=""
-                src="@/assets/image/desktop/lg-為什麼選擇了做甜點.svg"
-                alt="為什麼選擇了做甜點"
-                height="307"
-              />
-            </h2>
+          </div>
+          <div class="col-sm-10 col-md-6">
+            <div class="d-flex p-15 px-sm-0 py-md-0">
+              <div
+                class="
+                  writing-mode-md-vertical--rl
+                  col
+                  me-md-10 me-lg-40
+                  text-secondary-200
+                  lh-lg
+                  ms-md-0 ms-lg-17
+                "
+              >
+                <p class="mb-15 mb-md-0">
+                  青山依舊在，幾度夕陽紅。慣看秋月春風。<br class="d-none d-md-block" />
+                  一壺濁酒喜相逢，浪花淘盡英雄。是非成敗<br class="d-none d-md-block" />
+                  轉頭空，滾滾長江東逝水，白髮漁樵江渚<br
+                    class="d-none d-md-block"
+                  />上，古今多少事，都付笑談中。
+                </p>
+                <p class="me-md-16 me-lg-32 border-start border-secondary-100">
+                  是非成敗轉頭空，青山依舊在，幾度夕陽<br
+                    class="d-none d-md-block"
+                  />紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+                </p>
+              </div>
+              <h2 class="d-none d-md-block col mb-0 mt-md-n27">
+                <img
+                  class=""
+                  src="@/assets/image/desktop/lg-為什麼選擇了做甜點.svg"
+                  alt="為什麼選擇了做甜點"
+                  height="307"
+                />
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- </div> -->
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -159,6 +177,13 @@ const backgroundImages = [
 .introduction-image {
   height: 250px;
 }
+
+// @media (min-width: 576px) {
+//   .introduction-image {
+//     width: 100%;
+
+//   }
+// }
 
 @media (min-width: 768px) {
   .introduction-image {

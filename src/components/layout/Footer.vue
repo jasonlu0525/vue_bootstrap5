@@ -45,20 +45,20 @@
                     aria-label="email "
                     aria-describedby="please fill in email"
                   />
-                  <span
+                  <button type="button"
                     class="
                       material-icons-outlined
                       input-group-text
                       bg-accent
-                      fs-6
+                      fs-4
                       d-flex
                       rounded-0
-                      px-12
+                      px-10
                       border-0
                     "
                   >
                     arrow_forward
-                  </span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -69,14 +69,14 @@
     <div class="bg-secondary-100 py-15 px-10 px-md-0">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="d-flex justify-content-between">
+          <div class="col-lg-10">
+            <div class="d-flex flex-column flex-md-row justify-content-between">
               <div class="d-flex justify-content-between flex-column">
-                <h5 class="mb-20 ">
+                <h5 class="mb-20">
                   <router-link to="/" rel="noopener noreferrer">
                     <img
-                      width="171.22"
-                      height="26.6"
+                      width="171"
+                      height="27"
                       src="@/assets/image/desktop/logo/logotype-lg-dark.svg"
                       alt=""
                     />
@@ -86,12 +86,10 @@
                 <address>
                   <ul>
                     <li>
-                      <a href="tel+07-1234-5678" target="_blank" rel="noopener noreferrer"
-                        >07-1234-5678</a
-                      >
+                      <a href="tel+07-1234-5678" rel="noopener noreferrer">07-1234-5678</a>
                     </li>
                     <li>
-                      <a href="mailto:sweetaste@email.com" target="_blank" rel="noopener noreferrer"
+                      <a href="mailto:sweetaste@email.com" rel="noopener noreferrer"
                         >sweetaste@email.com</a
                       >
                     </li>
@@ -101,7 +99,7 @@
                     >
                       800 高雄市新興區幸福路 520 號
                     </li>
-                    <li>
+                    <li class="mb-12 mb-md-0">
                       <a href="#"
                         ><img
                           src="@/assets/image/desktop/icon/ic-facebook.svg"
@@ -119,7 +117,15 @@
                   </ul>
                 </address>
               </div>
-              <div></div>
+              <div>
+                <img
+                  src="@/assets/image/desktop/sm-今天是個吃甜點的好日子.svg"
+                  class="d-none d-md-block ms-md-auto mb-23"
+                  height="219"
+                  alt="今天是個吃甜點的好日子"
+                />
+                <h6 class="mb-0">© 2018 Sweetaste* All Rights Reserved</h6>
+              </div>
             </div>
           </div>
         </div>
