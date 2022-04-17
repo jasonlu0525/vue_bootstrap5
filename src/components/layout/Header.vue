@@ -1,14 +1,6 @@
 <template>
-  <header
-    class="
-      navbar navbar-expand-md navbar-light
-      bg-white
-      py-14
-      positon-sticky
-      sticky-top
-    "
-  >
-    <div class="container position-relative">
+  <header class="navbar navbar-expand-md navbar-light bg-white py-14 positon-sticky sticky-top">
+    <div class="container-md position-relative">
       <h1
         class="
           position-absolute position-md-static
@@ -25,12 +17,12 @@
               media="(min-width:992px)"
               srcset="@/assets/image/desktop/logo/logo-all-dark.svg"
             />
-            <img src="@/assets/image/mobile/logotype-sm-dark.svg" class="logo" alt="logo" />
+            <img src="@/assets/image/mobile/logo/logotype-sm-dark.svg" class="logo" alt="logo" />
           </picture>
         </a>
       </h1>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler border-0"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -48,7 +40,6 @@
           top-100
           start-0
           end-0
-          px-6 px-md-0
           bg-white
           text-center
         "
@@ -56,15 +47,22 @@
       >
         <ul class="navbar-nav ms-auto mb-0 fw-bold">
           <li class="nav-item px-md-12">
-            <router-link to="/" class="nav-link text-primary px-6" aria-current="page"
+            <router-link to="/" class="nav-link text-primary px-6 py-14 py-md-0
+            hover hover-bg-primary hover-text-white" aria-current="page"
               >首頁</router-link
             >
           </li>
           <li class="nav-item px-md-6">
-            <router-link to="/product" class="nav-link text-primary px-6">甜點</router-link>
+            <router-link to="/product" class="nav-link text-primary px-6 py-14 py-md-0
+            hover hover-bg-primary hover-text-white"
+              >甜點</router-link
+            >
           </li>
           <li class="nav-item px-md-6">
-            <router-link to="/login" class="nav-link text-primary px-6">登入</router-link>
+            <router-link to="/login" class="nav-link text-primary px-6 py-14 py-md-0
+            hover hover-bg-primary hover-text-white"
+              >登入</router-link
+            >
           </li>
         </ul>
       </div>
@@ -73,23 +71,21 @@
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .logo {
   display: block;
   width: 114px;
   height: 18px;
+
+  @include media-breakpoint-up(lg) {
+     width: 219px;
+    height: 40px;
+  }
 }
 .banner {
   background-image: url('https://bit.ly/2OhbMHr');
   height: 277px;
-}
-
-@media (min-width: 992px) {
-  .logo {
-    width: 219px;
-    height: 40px;
-  }
-  .banner {
+  @include media-breakpoint-up(lg) {
     height: 496px;
   }
 }

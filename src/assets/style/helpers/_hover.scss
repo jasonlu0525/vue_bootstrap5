@@ -1,0 +1,45 @@
+/*
+
+需搭配 .hover 作使用
+
+*/
+
+
+@each $colorName, $color in $theme-colors {
+    @each $breakpointAttr, $breakpointValue in $grid-breakpoints{
+        @if  $breakpointAttr != xs {
+            @media screen and (min-width: $breakpointValue){
+
+                .hover {
+                    &-#{ $breakpointAttr}-bg-#{$colorName} {
+
+                      &:hover {
+                        background-color: $color !important;
+                      }
+                    }
+                    &-#{ $breakpointAttr}-text-#{$colorName} {
+                      &:hover {
+                        color: $color !important;
+                      }
+                    }
+                }
+
+            }
+
+        }
+        @else{
+            .hover {
+                &-bg-#{$colorName} {
+                  &:hover {
+                    background-color: $color !important;
+                  }
+                }
+                &-text-#{$colorName} {
+                  &:hover {
+                    color: $color !important;
+                  }
+                }
+            }
+        }
+    }
+}

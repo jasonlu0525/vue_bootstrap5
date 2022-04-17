@@ -1,9 +1,9 @@
 <template>
-  <div class="container gx-0 gx-md-6">
+  <div class="container-md gx-0 gx-md-6">
     <div class="banner"></div>
   </div>
 
-  <div class="container gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
+  <div class="container-md gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
     <div class="row justify-content-center gx-0">
       <div class="col-md-10 gx-0">
         <ul class="row gx-0 fs-5 fs-md-4">
@@ -154,10 +154,18 @@
     </h2>
     <div class="bg-secondary-100">
       <div class="container gx-0 gx-md-5">
-        <div class="row justify-content-center align-items-center gx-0 gx-md-10
-        flex-lg-row-reverse">
-          <div class="col-sm-10 col-md-6 position-md-relative my-md-n10 pt-sm-15 pt-md-0
-          flex-lg-row-reverse">
+        <div
+          class="row justify-content-center align-items-center gx-0 gx-md-10 flex-md-row-reverse"
+        >
+          <div
+            class="
+              col-sm-10 col-md-6
+              position-md-relative
+              my-md-n10
+              pt-sm-15 pt-md-0
+              flex-lg-row-reverse
+            "
+          >
             <div
               class="
                 ratio
@@ -172,13 +180,7 @@
           <div class="col-sm-10 col-md-6">
             <div class="d-flex p-15 px-sm-0 py-md-0">
               <div
-                class="
-                  writing-mode-md-vertical--rl
-                  col
-                  me-md-10 me-lg-40
-                  text-secondary-200
-                  lh-lg
-                "
+                class="writing-mode-md-vertical--rl col me-md-10 me-lg-40 text-secondary-200 lh-lg"
               >
                 <p class="mb-15 mb-md-0">
                   青山依舊在，幾度夕陽紅。慣看秋月春風。<br class="d-none d-md-block" />
@@ -193,12 +195,13 @@
                   />紅。白髮漁樵江渚上，古今多少事，都付笑談中。
                 </p>
               </div>
-              <h2 class="d-none d-md-block col mb-0 mt-md-n27 me-lg-21">
+              <h2 class="d-none d-md-block col mb-0 mt-md-n27 me-lg-11">
                 <img
                   class=""
                   src="@/assets/image/desktop/lg-為什麼一定要吃甜點.svg"
                   alt="為什麼選擇了做甜點"
-                  height="307"
+                  height="303"
+                  width="89"
                 />
               </h2>
             </div>
@@ -207,6 +210,92 @@
       </div>
     </div>
   </section>
+  <section class="container">
+    <h2 class="text-center mb-15 mb-md-40">
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="@/assets/image/desktop/lg-想吃甜點是不需要理由的.svg"
+          width="89"
+          height="328"
+          class="mb-40"
+          alt="想吃甜點是不需要理由的"
+        />
+        <img
+          src="@/assets/image/mobile/sm-橫式-想吃甜點是不需要理由的.svg"
+          width="226"
+          height="60"
+          class="object-fit-contain"
+          alt="想吃甜點是不需要理由的"
+        />
+      </picture>
+      <img />
+    </h2>
+    <ul class="row">
+      <li
+        class="col-md-6 col-lg-4 gx-30 gx-md-10 mb-15 mb-lg-30"
+        v-for="product in productList"
+        :key="product.id"
+      >
+        <div class="card border-0 rounded-0 text-primary">
+          <div class="positon-relative">
+            <img :src="product.imageUrl" class="card-img-top" height="315" :alt="product.title" />
+            <string
+              class="
+                text-white
+                p-5
+                writing-mode-vertical--rl
+                letter-spacing-4
+                fw-bold
+                bg-primary
+                position-absolute
+                top-0
+                start-0
+                ms-10
+              "
+              >本日精選</string
+            >
+          </div>
+          <div class="card-body d-flex align-items-center fs-5 p-0">
+            <h3
+              class="
+                card-title
+                fw-light
+                mb-0
+                fs-5
+                py-8
+                px-16
+                border-start border-end border-secondary-100
+              "
+              v-text="product.title"
+            ></h3>
+            <p class="card-text fw-bold fs-5 flex-grow-1 text-center">NT$ 450</p>
+          </div>
+          <footer class="">
+            <button
+              type="button"
+              class="
+                btn
+                bg-secondary-100
+                text-center text-reset
+                d-block
+                w-100
+                fw-bold
+                fs-4
+                py-6
+                border-2
+
+                hover--fast hover-bg-primary hover-text-white
+                rounded-0
+              "
+            >
+              加入購物車
+            </button>
+          </footer>
+        </div>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script setup>
@@ -214,6 +303,30 @@ const backgroundImages = [
   'https://bit.ly/2R5tqwD',
   'https://bit.ly/2Dwoxd7',
   'https://bit.ly/2OUteif',
+];
+
+const productList = [
+  {
+    title: '焦糖馬卡龍',
+    imageUrl: 'https://bit.ly/2zBjQuq',
+    id: Math.floor(Math.random() * 1000),
+    price: 'NT$ 450',
+    tag: '本日精選',
+  },
+  {
+    title: '焦糖馬卡龍',
+    imageUrl: 'https://bit.ly/2zBDAxX',
+    id: Math.floor(Math.random() * 1000),
+    price: 'NT$ 450',
+    tag: '本日精選',
+  },
+  {
+    title: '焦糖馬卡龍',
+    imageUrl: 'https://bit.ly/2QbVsVR',
+    id: Math.floor(Math.random() * 1000),
+    price: 'NT$ 450',
+    tag: '本日精選',
+  },
 ];
 </script>
 
@@ -240,24 +353,9 @@ const backgroundImages = [
 
 .introduction-image {
   height: 250px;
-}
-
-// @media (min-width: 576px) {
-//   .introduction-image {
-//     width: 100%;
-
-//   }
-// }
-
-@media (min-width: 768px) {
-  .introduction-image {
-    width: 460px;
+    @include media-breakpoint-up(md) {
+       width: 460px;
     height: 460px;
-  }
-}
-@media (min-width: 992px) {
-  .banner {
-    height: 496px;
   }
 }
 </style>

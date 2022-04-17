@@ -8,13 +8,66 @@ $utilities: map-merge(
   (
     // 自定義
     'aspect-ratios':
-    (
-      responsive:true,
-      property: --bs-aspect-ratio,
-      class: aspect-ratios,
-      values:$aspect-ratios
+      (
+        responsive: true,
+        property: --bs-aspect-ratio,
+        class: aspect-ratios,
+        values: $aspect-ratios,
+      ),
+    'object-fit': (
+      responsive: true,
+      property: object-fit,
+      class: object-fit,
+      values: (
+        cover: cover,
+        contain: contain,
+      ),
     ),
-
+    'letter-spacing': (
+      responsive: true,
+      property: letter-spacing,
+      class: letter-spacing,
+      values: $spacers,
+    ),
+    'z-index': (
+      responsive: true,
+      property: z-index,
+      class: z-index,
+      values: (
+        top: 999,
+        center: 1,
+        bottom: 0,
+      ),
+    ),
+    'writing-mode': (
+      responsive: true,
+      property: writing-mode,
+      class: writing-mode,
+      values: (
+        horizontal: horizontal-tb,
+        vertical--rl: vertical-rl,
+      ),
+    ),
+    'hover': (
+      responsive: true,
+      property: transition,
+      class: hover,
+      values: (
+        --slow: 3s ease-out,
+        --normal: 0.7s ease-out,
+        --fast: 0.5s ease-out,
+      ),
+    ),
+    // 'hover-bg': (
+    //   responsive: true,
+    //   property: transition,
+    //   class: ,
+    //   values: (
+    //     --slow: 1s ease-out,
+    //     --normal: 0.7s ease-out,
+    //     --fast: 0.5s ease-out,
+    //   ),
+    // ),
     // scss-docs-start utils-vertical-align
     'align':
       (
@@ -113,16 +166,6 @@ $utilities: map-merge(
         x: translateX(-50%),
         y: translateY(-50%),
         0: translate(0%),
-      ),
-    ),
-    'z-index': (
-      responsive: true,
-      property: z-index,
-      class: z-index,
-      values: (
-        top: 999,
-        center: 1,
-        bottom: 0,
       ),
     ),
     // scss-docs-end utils-position
@@ -238,9 +281,12 @@ $utilities: map-merge(
       ),
     ),
     'viewport-height': (
+      responsive: true,
       property: height,
       class: vh,
       values: (
+        auto: auto,
+        50: 50vh,
         100: 100vh,
       ),
     ),
@@ -538,23 +584,14 @@ $utilities: map-merge(
     // scss-docs-end utils-spacing
     // Text
     // scss-docs-start utils-text
-    'writing-mode':
+    'font-family':
       (
-        responsive: true,
-        property: writing-mode,
-        class: writing-mode,
+        property: font-family,
+        class: font,
         values: (
-          horizontal: horizontal-tb,
-          vertical--rl: vertical-rl,
+          monospace: var(--#{$variable-prefix}font-monospace),
         ),
       ),
-    'font-family': (
-      property: font-family,
-      class: font,
-      values: (
-        monospace: var(--#{$variable-prefix}font-monospace),
-      ),
-    ),
     'font-size': (
       rfs: false,
       responsive: true,

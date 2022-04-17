@@ -96,6 +96,7 @@ $theme-colors: (
   'danger': $danger,
   'light': $light,
   'dark': $dark,
+  'white': $white, // _hover.scss @each 顏色專用
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1190,8 +1191,10 @@ $navbar-brand-margin-end: 1rem !default;
 $navbar-toggler-padding-y: 0.25rem !default;
 $navbar-toggler-padding-x: 0.75rem !default;
 $navbar-toggler-font-size: $font-size-lg !default;
-$navbar-toggler-border-radius: $btn-border-radius !default;
-$navbar-toggler-focus-width: $btn-focus-width !default;
+$navbar-toggler-border-radius: 0 !default;
+$navbar-toggler-focus-width: 0 !default;
+// $navbar-toggler-border-radius: $btn-border-radius !default;
+// $navbar-toggler-focus-width: $btn-focus-width !default;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out !default;
 // scss-docs-end navbar-variables
 

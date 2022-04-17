@@ -3,8 +3,8 @@
     <div class="bg-primary py-15 px-10 px-md-0">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="row">
+          <div class="col-lg-10">
+            <div class="row justify-content-between">
               <section
                 class="
                   col-md-6
@@ -45,7 +45,8 @@
                     aria-label="email "
                     aria-describedby="please fill in email"
                   />
-                  <button type="button"
+                  <button
+                    type="button"
                     class="
                       material-icons-outlined
                       input-group-text
@@ -95,7 +96,8 @@
                     </li>
 
                     <li
-                      class="mb-18 mb-md-15 border-bottom border-secondary-100 border-bottom-md-0"
+                      class="mb-18 mb-md-15 border-bottom border-secondary-100 border-bottom-md-0
+                      text-primary"
                     >
                       800 高雄市新興區幸福路 520 號
                     </li>
@@ -124,7 +126,7 @@
                   height="219"
                   alt="今天是個吃甜點的好日子"
                 />
-                <h6 class="mb-0">© 2018 Sweetaste* All Rights Reserved</h6>
+                <h6 class="mb-0 text-primary">© 2018 Sweetaste* All Rights Reserved</h6>
               </div>
             </div>
           </div>
