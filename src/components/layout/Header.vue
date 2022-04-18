@@ -47,20 +47,42 @@
       >
         <ul class="navbar-nav ms-auto mb-0 fw-bold">
           <li class="nav-item px-md-12">
-            <router-link to="/" class="nav-link text-primary px-6 py-14 py-md-0
-            hover hover-bg-primary hover-text-white" aria-current="page"
+            <router-link
+              to="/"
+              class="
+                nav-link
+                text-primary
+                px-6
+                py-14 py-md-0
+                hover-text-decoration-primary-border-1
+              "
+              aria-current="page"
               >首頁</router-link
             >
           </li>
           <li class="nav-item px-md-6">
-            <router-link to="/product" class="nav-link text-primary px-6 py-14 py-md-0
-            hover hover-bg-primary hover-text-white"
+            <router-link
+              to="/product"
+              class="
+                nav-link
+                text-primary
+                px-6
+                py-14 py-md-0
+                hover-text-decoration-primary-border-1
+              "
               >甜點</router-link
             >
           </li>
           <li class="nav-item px-md-6">
-            <router-link to="/login" class="nav-link text-primary px-6 py-14 py-md-0
-            hover hover-bg-primary hover-text-white"
+            <router-link
+              to="/login"
+              class="
+                nav-link
+                text-primary
+                px-6
+                py-14 py-md-0
+                hover-text-decoration-primary-border-1
+              "
               >登入</router-link
             >
           </li>
@@ -78,7 +100,7 @@
   height: 18px;
 
   @include media-breakpoint-up(lg) {
-     width: 219px;
+    width: 219px;
     height: 40px;
   }
 }

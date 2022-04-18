@@ -53,9 +53,9 @@ $utilities: map-merge(
       property: transition,
       class: hover,
       values: (
-        --slow: 3s ease-out,
-        --normal: 0.7s ease-out,
-        --fast: 0.5s ease-out,
+        -slow: 1s ease-out,
+        -normal: 0.7s ease-out,
+        -fast: 0.5s ease-out,
       ),
     ),
     // 'hover-bg': (

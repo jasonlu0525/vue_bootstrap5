@@ -1,45 +1,73 @@
 /*
 
-需搭配 .hover 作使用
+需搭配 utility .hover-- 作使用
+
+     .hover--slow:
+     .hover--normal
+     .hover--fast
 
 */
 
-
 @each $colorName, $color in $theme-colors {
-    @each $breakpointAttr, $breakpointValue in $grid-breakpoints{
-        @if  $breakpointAttr != xs {
-            @media screen and (min-width: $breakpointValue){
-
-                .hover {
-                    &-#{ $breakpointAttr}-bg-#{$colorName} {
-
-                      &:hover {
-                        background-color: $color !important;
-                      }
-                    }
-                    &-#{ $breakpointAttr}-text-#{$colorName} {
-                      &:hover {
-                        color: $color !important;
-                      }
-                    }
-                }
-
+  @each $breakpointAttr, $breakpointValue in $grid-breakpoints {
+    @if $breakpointAttr != xs {
+      @media screen and (min-width: $breakpointValue) {
+        .hover {
+          &-#{ $breakpointAttr}-bg-#{$colorName},
+          &-#{ $breakpointAttr}-bg-#{$colorName} > * {
+            &:hover {
+              background-color: $color !important;
             }
-
-        }
-        @else{
-            .hover {
-                &-bg-#{$colorName} {
-                  &:hover {
-                    background-color: $color !important;
-                  }
-                }
-                &-text-#{$colorName} {
-                  &:hover {
-                    color: $color !important;
-                  }
-                }
+          }
+          &-#{ $breakpointAttr}-text-#{$colorName},
+          &-#{ $breakpointAttr}-bg-#{$colorName} > * {
+            &:hover {
+              color: $color !important;
             }
+          }
+          &-no-cover {
+            // 定位元素專用
+            pointer-events: none;
+          }
         }
+      }
+    } @else {
+      .hover {
+        &-bg-#{$colorName},
+        &-bg-#{$colorName} > * {
+          &:hover {
+            background-color: $color !important;
+          }
+        }
+        &-text-#{$colorName},
+        &-bg-#{$colorName} > * {
+          &:hover {
+            color: $color !important;
+          }
+        }
+        &-no-cover {
+          // 定位元素專用
+          pointer-events: none;
+        }
+      }
     }
+  }
+}
+
+// text-decoration
+
+@each $borderAttr, $borderName in $border-widths {
+  @each $colorName, $color in $theme-colors {
+    .hover-text-decoration-#{$colorName}-border-#{$borderAttr} {
+      position: relative;
+      &:hover::after {
+        content: ' ';
+        border-bottom: 1px solid $color;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
 }

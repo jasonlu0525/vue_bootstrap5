@@ -42,10 +42,22 @@
                 text-white text-center
                 px-26 px-lg-60
                 py-20 py-md-40
+                hover-bg-accent hover-text-primary
               "
             >
-              <span class="position-relative z-index-top fw-light">人氣推薦</span>
-              <div class="bg-primary background-layer z-index-center h-100 opacity-75"></div>
+              <span class="position-relative z-index-top fw-light hover--slow hover-no-cover"
+                >人氣推薦</span
+              >
+              <div
+                class="
+                  bg-primary
+                  background-layer
+                  z-index-center
+                  h-100
+                  opacity-75
+                  hover--slow hover-bg-accent hover-text-primary
+                "
+              ></div>
               <div
                 class="background-layer"
                 :style="`background-image: url(${backgroundImages[1]}); background-position: center;
@@ -65,10 +77,15 @@
                 text-white
                 px-26 px-lg-60
                 py-20 py-md-40
+                hover-bg-accent hover-text-primary
               "
             >
-              <span class="position-relative z-index-top fw-light">新品上市</span>
-              <div class="bg-primary background-layer z-index-center h-100 opacity-75"></div>
+              <span class="position-relative z-index-top fw-light hover--slow hover-no-cover"
+                >新品上市</span
+              >
+              <div
+                class="bg-primary background-layer z-index-center h-100 opacity-75 hover--slow"
+              ></div>
               <div
                 class="background-layer"
                 :style="`background-image: url(${backgroundImages[2]}); background-position: center;
@@ -237,68 +254,15 @@
         v-for="product in productList"
         :key="product.id"
       >
-        <div class="card border-0 rounded-0 text-primary">
-          <div class="positon-relative">
-            <img :src="product.imageUrl" class="card-img-top" height="315" :alt="product.title" />
-            <string
-              class="
-                text-white
-                p-5
-                writing-mode-vertical--rl
-                letter-spacing-4
-                fw-bold
-                bg-primary
-                position-absolute
-                top-0
-                start-0
-                ms-10
-              "
-              >本日精選</string
-            >
-          </div>
-          <div class="card-body d-flex align-items-center fs-5 p-0">
-            <h3
-              class="
-                card-title
-                fw-light
-                mb-0
-                fs-5
-                py-8
-                px-16
-                border-start border-end border-secondary-100
-              "
-              v-text="product.title"
-            ></h3>
-            <p class="card-text fw-bold fs-5 flex-grow-1 text-center">NT$ 450</p>
-          </div>
-          <footer class="">
-            <button
-              type="button"
-              class="
-                btn
-                bg-secondary-100
-                text-center text-reset
-                d-block
-                w-100
-                fw-bold
-                fs-4
-                py-6
-                border-2
-
-                hover--fast hover-bg-primary hover-text-white
-                rounded-0
-              "
-            >
-              加入購物車
-            </button>
-          </footer>
-        </div>
+        <ProductCard :product="product" />
       </li>
     </ul>
   </section>
 </template>
 
 <script setup>
+import ProductCard from '@/components/ProductCard.vue';
+
 const backgroundImages = [
   'https://bit.ly/2R5tqwD',
   'https://bit.ly/2Dwoxd7',
@@ -353,8 +317,8 @@ const productList = [
 
 .introduction-image {
   height: 250px;
-    @include media-breakpoint-up(md) {
-       width: 460px;
+  @include media-breakpoint-up(md) {
+    width: 460px;
     height: 460px;
   }
 }

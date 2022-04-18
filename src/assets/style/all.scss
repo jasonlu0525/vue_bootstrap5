@@ -1,9 +1,9 @@
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+// @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import 'helpers/hover';
 
 @import '~bootstrap/scss/functions';
 @import 'helpers/variables';
 @import 'helpers/utilities';
 @import 'bootstrap';
 
-@import 'helpers/hover';
 @import 'base/base';
