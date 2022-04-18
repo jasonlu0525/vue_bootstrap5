@@ -53,6 +53,7 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+  linkActiveClass: 'hover',
 });
 
 router.afterEach(() => {

@@ -294,7 +294,7 @@ const productList = [
 ];
 </script>
 
-<style lang="scss" scopd>
+<style lang="scss" scoped>
 .banner {
   background-image: url('https://bit.ly/2OhbMHr');
   background-size: cover;
