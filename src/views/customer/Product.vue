@@ -72,17 +72,58 @@
             <ProductCard :product="product" />
           </li>
         </ul>
-        <ul class="d-flex justify-content-center justify-content-md-end">
-          <li class="border">
-            <a href="#" class="material-icons-outlined py-8 px-8 fs-4 d-block"> arrow_left </a>
-          </li>
-          <li class="border"><a href="" class="py-7 px-12 fs-5 d-block">1</a></li>
-          <li class="border"><a href="" class="py-7 px-12 fs-5 d-block">2</a></li>
-          <li class="border"><a href="" class="py-7 px-12 fs-5 d-block">3</a><a href=""></a></li>
-          <li class="border">
-            <a href="#" class="material-icons-outlined py-8 px-8 fs-4 d-block"> arrow_right </a>
-          </li>
-        </ul>
+        <div class="row justify-content-center justify-content-md-end">
+          <ul class="col-md-6 d-flex justify-content-center">
+            <li class="hover-bg-primary hover-text-white">
+              <a
+                href="#"
+                class="
+                  material-icons-outlined
+                  d-flex
+                  align-items-center
+                  px-8
+                  fs-4
+                  d-block
+                  border border-end-0
+                  h-100
+                  hover--slow
+                "
+              >
+                arrow_left
+              </a>
+            </li>
+            <li class="bg-primary text-secondary-100">
+              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 text-reset hover--slow"
+                >1</a
+              >
+            </li>
+            <li class="hover-bg-primary hover-text-white">
+              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 hover--slow">2</a>
+            </li>
+            <li class="hover-bg-primary hover-text-white">
+              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 hover--slow">3</a
+              ><a href=""></a>
+            </li>
+            <li class="hover-bg-primary hover-text-white">
+              <a
+                href="#"
+                class="
+                  material-icons-outlined
+                  d-flex
+                  align-items-center
+                  px-8
+                  fs-4
+                  d-block
+                  border
+                  h-100
+                  hover--slow
+                "
+              >
+                arrow_right
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

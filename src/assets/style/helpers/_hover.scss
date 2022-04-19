@@ -20,7 +20,7 @@
             }
           }
           &-#{ $breakpointAttr}-text-#{$colorName},
-          &-#{ $breakpointAttr}-bg-#{$colorName} > * {
+          &-#{ $breakpointAttr}-text-#{$colorName} > * {
             &:hover {
               color: $color !important;
             }
@@ -40,7 +40,7 @@
           }
         }
         &-text-#{$colorName},
-        &-bg-#{$colorName} > * {
+        &-text-#{$colorName} > * {
           &:hover {
             color: $color !important;
           }
