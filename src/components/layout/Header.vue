@@ -55,6 +55,10 @@
                 px-6
                 py-14 py-md-0
                 hover-text-decoration-primary-border-1
+                hover--normal
+                hover-bg-primary
+                hover-text-white
+                hover-md-no-hover
               "
               aria-current="page"
               >首頁</router-link
@@ -69,6 +73,10 @@
                 px-6
                 py-14 py-md-0
                 hover-text-decoration-primary-border-1
+                hover--normal
+                hover-bg-primary
+                hover-text-white
+                hover-md-no-hover
               "
               >甜點</router-link
             >
@@ -82,6 +90,10 @@
                 px-6
                 py-14 py-md-0
                 hover-text-decoration-primary-border-1
+                hover--normal
+                hover-bg-primary
+                hover-text-white
+                hover-md-no-hover
               "
               >登入</router-link
             >
