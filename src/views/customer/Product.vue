@@ -14,7 +14,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-15 mb-md-0 text-center gx-0 gx-md-10 fw-bold fs-4">
+      <div class="col-lg-4 mb-15 mb-lg-0 text-center gx-0 gx-md-10 fw-bold fs-4">
         <h4 class="py-9 bg-primary text-secondary-100 mb-0 fs-4">甜點類別</h4>
         <ul>
           <li>
@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-8 mb-15">
+      <div class="col-lg-8 mb-15">
         <ul class="row">
           <li
             class="col-md-6 mb-15 mb-md-10 gx-30 gx-md-10"
@@ -175,6 +175,7 @@ const productList = [
     tag: '本日精選',
   },
 ];
+
 </script>
 <style scoped lang="scss">
 .banner {

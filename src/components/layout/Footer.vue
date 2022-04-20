@@ -40,7 +40,7 @@
                   </span>
                   <input
                     type="mail"
-                    class="form-control py-8 border-0 rounded-0 ps-32 m-0 bg-secondary-100"
+                    class="form-control py-8 border-0 ps-32 m-0 bg-secondary-100"
                     placeholder="請輸入電子郵件"
                     aria-label="email "
                     aria-describedby="please fill in email"
@@ -53,7 +53,6 @@
                       bg-accent
                       fs-4
                       d-flex
-                      rounded-0
                       px-10
                       border-0
                     "

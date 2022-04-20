@@ -62,7 +62,6 @@
           py-6
           border-2
           hover--fast hover-bg-primary hover-text-white
-          rounded-0
         "
       >
         加入購物車
@@ -93,6 +92,9 @@ const { product } = toRefs(productData);
   cursor: pointer;
 }
 
+.btnwrap{
+   cursor: pointer;
+}
 .btnwrap:hover .material-icons.md1::before {
   font-family: 'Material Icons';
   content: 'favorite';
