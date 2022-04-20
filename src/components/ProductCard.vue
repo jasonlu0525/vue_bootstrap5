@@ -1,6 +1,6 @@
 <template>
   <div class="card border-0 rounded-0 text-primary">
-    <div class="positon-relative">
+    <div class="positon-relative btnwrap hover--slow">
       <img :src="product.imageUrl" class="card-img-top" height="315" :alt="product.title" />
       <strong
         class="
@@ -14,9 +14,23 @@
           top-0
           start-0
           ms-10
+          stretched-link
         "
         >本日精選</strong
       >
+      <span
+        class="
+          material-icons
+          md1
+          position-absolute
+          top-0
+          end-0
+          mt-8
+          me-10
+          hover--normal hover-text-danger
+        "
+      >
+      </span>
     </div>
     <div
       class="
@@ -67,3 +81,20 @@ const productData = defineProps({
 
 const { product } = toRefs(productData);
 </script>
+
+<style scoped>
+/* 處理  material-icons favotite  hover 後從  Outlined 樣式變成 fill 樣式  */
+.material-icons.md1::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  content: 'favorite_border';
+  cursor: pointer;
+}
+
+.btnwrap:hover .material-icons.md1::before {
+  font-family: 'Material Icons';
+  content: 'favorite';
+}
+</style>
