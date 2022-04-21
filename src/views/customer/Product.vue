@@ -14,8 +14,8 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 mb-15 mb-lg-0 text-center gx-0 gx-md-10 fw-bold fs-4">
-        <h4 class="py-9 bg-primary text-secondary-100 mb-0 fs-4">甜點類別</h4>
+      <div class="col-lg-4 mb-15 mb-lg-0 text-center gx-0 gx-md-10 fw-bold fs-12">
+        <h4 class="py-9 bg-primary text-secondary-100 mb-0 fs-12">甜點類別</h4>
         <ul>
           <li>
             <router-link
@@ -82,7 +82,7 @@
                   d-flex
                   align-items-center
                   px-8
-                  fs-4
+                  fs-12
                   d-block
                   border border-end-0
                   h-100
@@ -93,15 +93,15 @@
               </a>
             </li>
             <li class="bg-primary text-secondary-100">
-              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 text-reset hover--slow"
+              <a href="" class="py-7 px-12 fs-10 d-block border border-end-0 text-reset hover--slow"
                 >1</a
               >
             </li>
             <li class="hover-bg-primary hover-text-white">
-              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 hover--slow">2</a>
+              <a href="" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">2</a>
             </li>
             <li class="hover-bg-primary hover-text-white">
-              <a href="" class="py-7 px-12 fs-5 d-block border border-end-0 hover--slow">3</a
+              <a href="" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">3</a
               ><a href=""></a>
             </li>
             <li class="hover-bg-primary hover-text-white">
@@ -112,7 +112,7 @@
                   d-flex
                   align-items-center
                   px-8
-                  fs-4
+                  fs-12
                   d-block
                   border
                   h-100

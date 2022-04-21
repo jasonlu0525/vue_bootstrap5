@@ -6,7 +6,7 @@
   <div class="container-md gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
     <div class="row justify-content-center gx-0">
       <div class="col-md-10 gx-0">
-        <ul class="row gx-0 fs-5 fs-md-4">
+        <ul class="row gx-0 fs-10 fs-md-12">
           <li class="col-4 gx-0 writing-mode-vertical--rl">
             <router-link
               to="/product"
