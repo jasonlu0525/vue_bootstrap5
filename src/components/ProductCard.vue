@@ -92,8 +92,8 @@ const { product } = toRefs(productData);
   cursor: pointer;
 }
 
-.btnwrap{
-   cursor: pointer;
+.btnwrap {
+  cursor: pointer;
 }
 .btnwrap:hover .material-icons.md1::before {
   font-family: 'Material Icons';

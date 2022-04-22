@@ -12,6 +12,13 @@
   @each $breakpointAttr, $breakpointValue in $grid-breakpoints {
     @if $breakpointAttr == xs {
       .hover {
+        &-no-hover,
+        &-no-hover > * {
+          &:hover {
+            background-color: transparent !important;
+            color: inherit !important;
+          }
+        }
         &-bg-#{$colorName},
         &-bg-#{$colorName} > * {
           &:hover {

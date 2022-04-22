@@ -25,7 +25,7 @@
               <div
                 class="background-layer"
                 :style="`background-image: url(${backgroundImages[0]}); background-position: center;
-  background-size: cover;filter: blur(5px);`"
+                background-size: cover;filter: blur(5px);`"
               ></div>
             </router-link>
           </li>
@@ -61,7 +61,7 @@
               <div
                 class="background-layer"
                 :style="`background-image: url(${backgroundImages[1]}); background-position: center;
-  background-size: cover;filter: blur(5px);`"
+                background-size: cover;filter: blur(5px);`"
               ></div>
             </router-link>
           </li>
@@ -89,7 +89,7 @@
               <div
                 class="background-layer"
                 :style="`background-image: url(${backgroundImages[2]}); background-position: center;
-  background-size: cover;filter: blur(5px);`"
+                background-size: cover;filter: blur(5px);`"
               ></div>
             </router-link>
           </li>
