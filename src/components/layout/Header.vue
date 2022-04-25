@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar navbar-expand-md navbar-light bg-white py-14 positon-sticky sticky-top">
+  <header class="navbar navbar-expand-md navbar-light bg-white py-15 positon-sticky sticky-top">
     <div class="container-md position-relative">
       <h1
         class="
@@ -14,10 +14,14 @@
         <a class="navbar-brand align-middle mb-0" href="#">
           <picture>
             <source
-              media="(min-width:992px)"
+              media="(min-width:768px)"
               srcset="@/assets/image/desktop/logo/logo-all-dark.svg"
             />
-            <img src="@/assets/image/mobile/logo/logotype-sm-dark.svg" class="logo" alt="logo" />
+            <img
+              src="@/assets/image/mobile/logo/logotype-sm-dark.svg"
+              class="logo"
+              alt="sweet taste"
+            />
           </picture>
         </a>
       </h1>

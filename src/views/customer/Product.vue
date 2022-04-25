@@ -12,7 +12,7 @@
       </h2>
     </section>
   </div>
-  <div class="container">
+  <div class="container-md">
     <div class="row">
       <div class="col-lg-4 mb-15 mb-lg-0 text-center gx-0 gx-md-10 fw-bold fs-12">
         <h4 class="py-9 bg-primary text-secondary-100 mb-0 fs-12">甜點類別</h4>

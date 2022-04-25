@@ -1,9 +1,9 @@
 <template>
-  <div class="container-md gx-0 gx-md-6">
+  <div class="container-md gx-0 gx-md-5">
     <div class="banner"></div>
   </div>
 
-  <div class="container-md gx-0 gx-md-6 mt-md-n44 mb-15 mb-md-40">
+  <div class="container-md gx-0 gx-md-5 mt-md-n44 mb-15 mb-md-40">
     <div class="row justify-content-center gx-0">
       <div class="col-md-10 gx-0">
         <ul class="row gx-0 fs-10 fs-md-12">
@@ -301,7 +301,7 @@ const productList = [
   background-position: center;
   background-repeat: no-repeat;
   height: 277px;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     height: 496px;
   }
 }

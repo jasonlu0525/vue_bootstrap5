@@ -18,5 +18,7 @@ p{
 address{
   margin-bottom: 0;
 }
-
-
+// 清除 inline-block 下方多餘的空白
+.material-icons{
+  vertical-align: middle;
+}

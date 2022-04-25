@@ -1,6 +1,6 @@
 <script></script>
 <template>
-  <div class="container pb-sm-14 py-lg-30">
+  <div class="container-md pb-sm-14 pb-lg-30 pt-lg-15" >
     <div class="row justify-content-center gx-lg-0 align-items-center">
       <div class="col-md-10 col-lg-5 gx-0">
         <div class="bg-primary">
