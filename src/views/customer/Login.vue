@@ -5,7 +5,7 @@
       <div class="col-md-10 col-lg-5 gx-0">
         <div class="bg-primary">
           <Form v-slot="{ errors }" @submit="login">
-            <div class="pt-15 pt-lg-20 px-15 pb-15 pb-lg-12">
+            <section class="pt-15 pt-lg-20 px-15 pb-15 pb-lg-12">
               <h2 class="mb-15 mb-md-20 text-center text-white fs-18 fw-bold lh-1">會員登入</h2>
               <ul class="d-flex bg-secondary-100 d-lg-none p-15 mx-n15 mb-15 text-center">
                 <li class="col bg-white py-10 hover--normal hover-bg-secondary-100">
@@ -53,7 +53,7 @@
                   <Field
                     v-model="loginFormData.account"
                     type="email"
-                    class="form-control border-0 bg-secondary-100 text-primary-200 ps-32"
+                    class="form-control border-0 bg-secondary-100 text-secondary-200 ps-32"
                     id="email"
                     placeholder="電子信箱/手機號碼"
                     name="email"
@@ -81,7 +81,7 @@
                 <Field
                   v-model="loginFormData.password"
                   type="password"
-                  class="form-control border-0 bg-secondary-100 text-primary-200 ps-32"
+                  class="form-control border-0 bg-secondary-100 text-secondary-200 ps-32"
                   id="password"
                   placeholder="請輸入使用者密碼"
                   name="password"
@@ -118,7 +118,7 @@
                 />
                 <label class="form-check-label text-secondary-100" for="rememberMe"> 記住我 </label>
               </div>
-            </div>
+            </section>
             <button
               type="submit"
               class="

@@ -98,11 +98,11 @@
               >
             </li>
             <li class="hover-bg-primary hover-text-white">
-              <a href="" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">2</a>
+              <a href="#" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">2</a>
             </li>
             <li class="hover-bg-primary hover-text-white">
-              <a href="" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">3</a
-              ><a href=""></a>
+              <a href="#" class="py-7 px-12 fs-10 d-block border border-end-0 hover--slow">3</a
+              ><a href="#"></a>
             </li>
             <li class="hover-bg-primary hover-text-white">
               <a
@@ -136,46 +136,45 @@ const productList = [
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2QiWeQW',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
   {
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2zBjQuq',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
   {
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2zKOP7w',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
   {
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2NcDVuB',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
   {
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2zBDAxX',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
   {
     title: '焦糖馬卡龍',
     imageUrl: 'https://bit.ly/2zL5jN7',
     id: Math.floor(Math.random() * 1000),
-    price: 'NT$ 450',
+    price: 450,
     tag: '本日精選',
   },
 ];
-
 </script>
 <style scoped lang="scss">
 .banner {

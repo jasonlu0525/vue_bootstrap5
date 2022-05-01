@@ -30,16 +30,23 @@ const routes = [
         path: 'checkout',
         name: 'checkout',
         component: () => import('@/views/customer/Checkout.vue'),
-      },
-      {
-        path: 'pay',
-        name: 'pay',
-        component: () => import('@/views/customer/Payment.vue'),
-      },
-      {
-        path: 'confirm',
-        name: 'confirm',
-        component: () => import('@/views/customer/Confirm.vue'),
+        children: [
+          {
+            path: 'delivery',
+            name: 'delivery',
+            component: () => import('@/views/customer/Delivery.vue'),
+          },
+          {
+            path: 'pay',
+            name: 'pay',
+            component: () => import('@/views/customer/Payment.vue'),
+          },
+          {
+            path: 'confirm',
+            name: 'confirm',
+            component: () => import('@/views/customer/Confirm.vue'),
+          },
+        ],
       },
       {
         path: 'success',

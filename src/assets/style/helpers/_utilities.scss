@@ -194,6 +194,7 @@ $utilities: map-merge(
       ),
     ),
     'border-bottom': (
+      responsive: true,
       property: border-bottom,
       values: (
         null: $border-width solid $border-color,
@@ -209,6 +210,7 @@ $utilities: map-merge(
       ),
     ),
     'border-color': (
+      responsive: true,
       property: border-color,
       class: border,
       values:
@@ -666,6 +668,7 @@ $utilities: map-merge(
     'color':
       (
         property: color,
+        responsive:true,
         class: text,
         local-vars: (
           'text-opacity': 1,
@@ -698,6 +701,7 @@ $utilities: map-merge(
     'background-color':
       (
         property: background-color,
+        responsive: true,
         class: bg,
         local-vars: (
           'bg-opacity': 1,

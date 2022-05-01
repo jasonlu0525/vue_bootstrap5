@@ -46,7 +46,7 @@
         class="card-title fw-light mb-0 fs-10 py-8 px-16 border-end border-secondary-100"
         v-text="product.title"
       ></h3>
-      <h4 class="card-text fw-bold fs-10 flex-grow-1 text-center">NT$ 450</h4>
+      <h4 class="card-text fw-bold fs-10 flex-grow-1 text-center">NT$ {{ product.price }}</h4>
     </div>
     <footer class="">
       <button
